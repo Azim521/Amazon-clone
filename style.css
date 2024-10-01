@@ -1,15 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html body{
+
+html, body {
     height: 100vh;
     overflow-x: hidden;
 }
-
-
-
-
 
 /* This part is for azim */
 
@@ -23,91 +20,84 @@ html body{
 
 
 
-
-
-
-
-
-
-
-
-
 /* This part is for rohit */
 
-
-.body-part{
+.body-part {
     height: 100%;
+    background-color: rgba(140, 137, 137, 0.1);
 }
-.image-box{
+
+.image-box {
     position: relative;
 }
-.amazon-background{
+
+.amazon-background {
     height: 80%;
     width: 100%;
 }
-.image-box::after{
+
+.image-box::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 50%; 
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
-
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(140, 137, 137, 0) 0%, rgba(140, 137, 137, 0.1) 100%);
+    filter: blur(10px);
+    pointer-events: none;
+    z-index: 1;
 }
-.mutiple-boxes{
+
+.mutiple-boxes {
     display: flex;
     justify-content: space-evenly;
     bottom: 9%;
     position: absolute;
     width: 100%;
     height: 54%;
-    /* border: 2px solid red; */
     font-family: Arial, Helvetica, sans-serif;
 }
-.box-1{
+
+.box-1, .box-2, .box-3, .box-4 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* text-align: center; */
     height: 100%;
     width: 24%;
     background-color: white;
-    /* border: 2px solid black; */
 }
-.box-1 h3{
+
+.box-1 h3, .box-2 h3, .box-3 h3, .box-4 h3 {
     font-size: 22px;
     font-weight: 600;
-    /* border: 2px solid black; */
     margin-top: -50px;
     margin-bottom: 15px;
     text-align: start;
     width: 90%;
 }
-.box-1 img{
-    /* position: relative; */
+
+
+.box-2 h3, .box-4 h3 {
+    margin-left: 10px;
+}
+
+.box-1 img, .box-3 img {
     height: 65%;
     width: 90%;
-
 }
-.box-2{
+
+.grid-box1, .grid-box2 {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    /* text-align: center; */
-    height: 100%;
-    width: 24%;
-    background-color: white;
-    /* border: 2px solid black; */
 }
-.box-2 h3{
-    font-size: 22px;
-    font-weight: 600;
-    /* border: 2px solid black; */
-    margin-top: -50px;
-    margin-bottom: 15px;
-    text-align: start;
-    width: 90%;
+
+.grid-1-1, .grid-2-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
 }
